@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products page</title>
+    <link rel="stylesheet" type="text/css" href="que4websitefed.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="product box">
+                <div class="all images">
+                    <div class="small images">
+                        <img src="F:\sweety\images" onclick="clickimg(this)">
+                        <img src="F:\sweety\images" onclick="clickimg(this)">
+                        <img src="F:\sweety\images" onclick="clickimg(this)">
+                        <img src="F:\sweety\images" onclick="clickimg(this)">
+
+                    </div>
+                    <div class="main images">
+                        <img src="F:\sweety\images" id="imagebox">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : Apple</p>
+                    <h2>Apple iPhone 12 (white, 64 GB)</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="price box">
+                        <p class="price">&#8377; 79,900</p>
+                        <strike>&#8377; 89,900</strike>
+                    </div>
+                    <p> size :<select name="size">
+                            <option value="select color">select color</option>
+                            <option value="black">black</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                            <option value="purpule">purpule</option>
+                        </select></p>
+                    <p>Quantity <input type="text" value="1"></p>
+                    <button>
+                        <span class="fa fa-shopping-cart"></span>
+                        add to cart
+                    </button>
+                    <button class="buy">
+                        <span class="fa fa-shopping-cart"></span>
+                        buy now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickimg(smallImg){
+            varfullImg=document.getElementById("imagebox");
+            fullImg.src=smallImg.src
+        }
+    </script>
+</body>
+
+</html>
